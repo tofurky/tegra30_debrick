@@ -1,0 +1,4 @@
+[submodule "fusee-launcher"]
+	path = fusee-launcher
+	url = https://github.com/jevinskie/fusee-launcher
+	branch = n7
