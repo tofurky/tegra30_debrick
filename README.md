@@ -60,8 +60,8 @@ The following files are contained within this repo:
 - [ouya\_rev\_1.01\_2013-06-20.bin](/bootloader/ouya_rev_1.01_2013-06-20.bin): decrypted fastboot bootloader, dumped with nvflash  
 - [ouya\_rev\_1.01\_2013-06-20\_sigcheck\_disabled.bin](/bootloader/ouya_rev_1.01_2013-06-20_sigcheck_disabled.bin): as above, but with signature check disabled allowing flashing of unsigned bootloader to eMMC  
 - [ouya\_rev\_1.01\_bct.bin](/bct/ouya_rev_1.01_bct.bin): BCT dumped via nvflash and decrypted  
-- [ouya\_apx\_glitch.jpg](/image/ouya_apx_glitch.jpg): annotated image of PCB showing how to force APX mode  
 - [uart\_payload\_ouya.bin](/payload/uart_payload_ouya.bin): precompiled version of uart\_payload.c  
+- [ouya\_apx\_glitch.jpg](/image/ouya_apx_glitch.jpg): annotated image of PCB showing how to force APX mode  
 - [recovery-clockwork-6.0.4.8-ouya.img](/recovery/recovery-clockwork-6.0.4.8-ouya.img): ClockworkMod Recovery  
 
 More detailed descriptions of the files can be found if you check their git history, for example [nvflash\_v1.13.87205\_miniloader\_patched's](https://github.com/tofurky/tegra30_debrick/commits/master/utils/nvflash_v1.13.87205_miniloader_patched).
