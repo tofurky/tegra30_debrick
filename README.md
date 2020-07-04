@@ -51,6 +51,7 @@ The following files are contained within this repo:
 - [bootloader-grouper-4.23\_uart.img](/bootloader/bootloader-grouper-4.23_uart.img): as above, with UART output patched in  
 - [uart\_print.c](/bootloader/uart_print.c): source of UART print function patched into bootloader-grouper-4.23\_uart.img  
 - [nexus\_7\_grouper\_bct.bin](/bct/nexus_7_grouper_bct.bin): BCT dumped from "grouper" using nvflash  
+- [uart\_payload\_n7.bin](/payload/uart_payload_n7.bin): precompiled version of uart\_payload.c  
 - [n7\_uart.jpg](/image/n7_uart.jpg): annotated image of PCB showing UARTA pinout  
 - [n7\_uart\_schematic.jpg](/image/n7_uart_schematic.jpg): excerpt of ME370T schematic showing debug header pinout  
 - [n7\_uart\_context.jpg](/image/n7_uart_context.jpg): picture of opened tablet showing context of header location  
@@ -62,6 +63,7 @@ The following files are contained within this repo:
 - [ouya\_apx\_glitch.jpg](/image/ouya_apx_glitch.jpg): annotated image of PCB showing how to force APX mode  
 - [uart\_payload\_ouya.bin](/payload/uart_payload_ouya.bin): precompiled version of uart\_payload.c  
 - [recovery-clockwork-6.0.4.8-ouya.img](/recovery/recovery-clockwork-6.0.4.8-ouya.img): ClockworkMod Recovery  
+
 More detailed descriptions of the files can be found if you check their git history, for example [nvflash\_v1.13.87205\_miniloader\_patched's](https://github.com/tofurky/tegra30_debrick/commits/master/utils/nvflash_v1.13.87205_miniloader_patched).
 
 ## Nexus 7 Debrick
