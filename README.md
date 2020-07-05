@@ -5,6 +5,7 @@
 - [License](#License)  
 - [Background](#Background)  
 - [Files](#Files)  
+- [Other Methods](#Other-Methods)  
 - [Nexus 7 Debrick](#Nexus-7-2012-WiFi-Debrick)  
 - [Ouya Debrick](#Ouya-Debrick)  
 
@@ -65,6 +66,21 @@ The following files are contained within this repo:
 - [recovery-clockwork-6.0.4.8-ouya.img](/recovery/recovery-clockwork-6.0.4.8-ouya.img): ClockworkMod Recovery  
 
 More detailed descriptions of the files can be found if you check their git history, for example [nvflash\_v1.13.87205\_miniloader\_patched's](https://github.com/tofurky/tegra30_debrick/commits/master/utils/nvflash_v1.13.87205_miniloader_patched).
+
+## Other Methods
+
+In the months it took me to finally put this repo together after working through this between February and March of 2020, an alternate method was posted to XDA Developers tailored to the Nexus 7.
+
+The following are a couple guides based on this, the first link being the original:
+
+- [Unbrick Nexus 7 with another Tegra 3 Device](https://forum.xda-developers.com/nexus-7/general/unbrick-nexus-7-tegra-3-device-t4078627) by [Jirmd](https://github.com/GeorgeMato4)
+- [[TUTORIAL] How to unbrick Nexus 7 without blob.bin (REQUIRES ANOTHER NEXUS 7 2012)](https://forum.xda-developers.com/nexus-7/general/tutorial-how-to-unbrick-nexus-7-blob-bin-t4083879) by [enderzip](https://forum.xda-developers.com/member.php?u=10063311)
+
+It also uses [@jevinskie](https://github.com/jevinskie)'s [fusee-launcher fork](https://github.com/jevinskie/fusee-launcher), but to grab the SBK using their [dump-sbk-via-usb.S](https://github.com/jevinskie/fusee-launcher/blob/n7/dump-sbk-via-usb.S) payload.
+
+The cavaet is that at least at the moment it appears to require another working device to generate the blobs.
+
+That method is not covered here, but is probably worth trying if the steps detailed here don't work for you.
 
 <!-- sections below are best viewed rendered as HTML via e.g. /usr/bin/markdown - if you're reading this in a text editor, sorry ;-) -->
 
