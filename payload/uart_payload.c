@@ -19,7 +19,8 @@
 //#define UARTA
 
 // ouya
-#define UARTD
+//#define UARTD
+
 
 // ODM_DEBRICK will heavy-handedly disable the MMC controller via IPATCH.
 // if bad odmdata is flashed to the BCT and the board becomes unresponsive to nvflash, this can bring it back
@@ -109,6 +110,9 @@
 #define CLK_RST_CONTROLLER_RST_DEVICES CLK_RST_CONTROLLER_RST_DEVICES_U_0
 #define CLK_RST_CONTROLLER_CLK_SOURCE_UART CLK_RST_CONTROLLER_CLK_SOURCE_UARTD_0
 #define UART_CAR_MASK UARTD_CAR_MASK
+
+#else
+#error "one of UARTA or UARTD must be defined"
 #endif
 
 // General next-stage image entry point type.

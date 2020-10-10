@@ -47,6 +47,8 @@ The following files are contained within this repo:
 - [nvflash\_v1.13.87205\_miniloader\_patched](/utils/nvflash_v1.13.87205_miniloader_patched): as above, with patched miniloader to override security fuse checks  
 - [ipatch\_rcm\_sample.c](/payload/ipatch_rcm_sample.c): Tegra X1 Fusée Gelée payload to disable security fuse checks (by ktemkin)  
 - [uart\_payload.c](/payload/uart_payload.c): as above, but tailored to Tegra 3 (Nexus 7 and Ouya)  
+- [Makefile](/payload/Makefile): Makefile to build both payloads from uart\_payload.c  
+- [uart_payload.lds](/payload/uart_payload.lds): linker script to build payloads from uart\_payload.c  
 **Nexus 7:**  
 - [bootloader-grouper-4.23.img](/bootloader/bootloader-grouper-4.23.img): unpatched 2012 Nexus 7 WiFi "grouper" bootloader  
 - [bootloader-grouper-4.23\_uart.img](/bootloader/bootloader-grouper-4.23_uart.img): as above, with UART output patched in  
