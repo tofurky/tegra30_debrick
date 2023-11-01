@@ -65,6 +65,7 @@ The following files are contained within this repo:
 - [ouya\_rev\_1.01\_bct.bin](/bct/ouya_rev_1.01_bct.bin): BCT dumped via nvflash and decrypted  
 - [uart\_payload\_ouya.bin](/payload/uart_payload_ouya.bin): precompiled version of uart\_payload.c  
 - [ouya\_apx\_glitch.jpg](/image/ouya_apx_glitch.jpg): annotated image of PCB showing how to force APX mode  
+- [ouya\_apx\_alternate\_method.jpg](/image/ouya_apx_alternate_method.jpg): annotated image of PCB showing showing an alternate method to force APX mode  
 - [recovery-clockwork-6.0.4.8-ouya.img](/recovery/recovery-clockwork-6.0.4.8-ouya.img): ClockworkMod Recovery  
 
 More detailed descriptions of the files can be found if you check their git history, for example [nvflash\_v1.13.87205\_miniloader\_patched's](https://github.com/tofurky/tegra30_debrick/commits/master/utils/nvflash_v1.13.87205_miniloader_patched).
@@ -593,8 +594,12 @@ Before attempting any of this, be sure that your system isn't recoverable via ot
 	* Disassemble Ouya by removing the 4 screws on the top and carefully sliding out PCB. [This iFixit teardown](https://www.ifixit.com/Teardown/Ouya+Teardown/14224) may be helpful.
 	* Repeat steps 1 & 2 to reconnect power and Micro-USB cable
 	* Taking ESD precautions, connect [pin on PFET](/image/ouya_apx_glitch.jpg) to ground via low ohm resistor (~47 ohm - other values including 0 ohm probably work)
-	* Power on Ouya with button
-	* Leave PFET pin grounded for approximately 2s after pressing power button. This is about the time it takes for the fan to spin up.
+		- Power on Ouya with button
+		- Leave PFET pin grounded for approximately 2s after pressing power button. This is about the time it takes for the fan to spin up.
+	* If grounding PFET pin doesn't work. There is an alternate method. Otherwise skip to the next step.
+	    - Short the [U33 pads](/image/ouya_apx_alternate_method.jpg)
+		- Power on Ouya with button
+		- Remove short from U33
 	* Check Linux `dmesg` output on your PC to see if the Ouya enumerated in APX mode.
 		- If it did, but reset afterwards, you've held the PFET to ground for too long.
 		- If it didn't, try holding it a small amount longer.
